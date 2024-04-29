@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    header{
+        background-color: rgb(3, 92, 130);
+        padding: 10px;
+        color: azure;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body{
+        text-align: center;
+        background-color: rgb(159, 249, 143);
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    form{
+        text-align: center;
+        width: 100;
+    }
+    name{
+        width:100px;
+    }
+</style>
+<body>
+    <header>
+        <div class="container-fluid"></div>
+        <h1 align="center" >Create Account</h1>
+    </header>
+    <form action="" name="login" align="center">
+        <br></br>
+        Name: <input type="text" name="name" placeholder="Please enter your name"/>
+        <br> </br>
+        Email: <input type="email" name="email" placeholder="Please enter your email"/>
+        <br> </br>
+        Username: <input type="text" name="uname" placeholder="Please enter your Username"/>
+        <br> </br>
+        Password: <input type="password" name="password" placeholder="Please enter your password" />
+        <br> </br>
+        Re-enter your password: <input type="password" name="password2" placeholder="Enter your password again"/>
+        <br></br>
+        hi: <input type="date"/>
+        <br></br>
+        <input type="button" Value="Submit" onclick="validate()"/>
+
+    </form> <input type=""/>
+    <script>
+        function validate(){
+            var user=document.login.uname.value;
+            var pass=document.getElementsByName("password"); 
+            var pass1=document.getElementsByName("password2");  
+            console.log("password: " + pass);
+                if (user == null || user == "") 
+                {
+                    alert("Username cannot be empty. ");
+                    return false;
+                 } 
+                else if (pass.length <= 8) {
+                     alert("Required length of password must be 8.");
+                return false;
+                 } 
+                else if (pass != pass1){
+                    alert("The entered and re-entered password are not the same BITCH   ");
+                return false;
+                }
+                else{
+                    return true;
+                }
+                 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ole Soljskaer</title>
+</head>
+<body>
+    <style>
+        input[type=Text], select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+         }
+
+         input[type=submit], select{
+            width: 100%;
+            background-color: rgb(76, 175, 80);
+            padding: 14px 20px;
+            margin:8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+         }
+
+         input[type=submit]:hover {
+            width: 100%;
+            background-color: rgb(39, 90, 41);
+         }
+         div{
+            border-radius: 5px;
+            background-color: rgb(43, 61, 226);
+            padding: 10px;
+         }
+    </style>
+    <div>
+        <forms actions=" ">
+            <label for="fname" font="Arial">First Name</label>
+            <input type="Text" id="fname" name="firstname" placeholder="First name">
+
+            <label for="lname">Last Name</label>
+            <input type="Text" id="lname" name="lastname" placeholder="Last name">
+
+            <label for="country">Country name</label>
+            <select id="country" name="country" placeholder="Country">
+                <option value="none">Select</option>
+                <option value="india">India</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="Aus">Australia</option>
+            </select>
+
+            <input type="submit" Value="submit">
+        </forms>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body align="center">
+    <style>
+        div{
+            border: 2px solid black;
+            background: red;
+            width: 50px;
+            height: 50px;
+        }
+        div:hover{
+            /* transform: scale(2);
+            transform: rotate(45deg); 
+            transform: translate(20px, 20px); */
+         }
+
+         #animation{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: relative;
+            animation :move 25s infinite;
+         }
+         @keyframes move{
+            0%{top: 0px;}
+            5%{top: 50px;}
+            2%{top: 100px;}
+            1.5%{top: 200px;}
+            1%{top: 0px;}
+         }
+    </style>
+    <p> Basic <span style="color:blue"> Animation </span></p>
+
+    <div id="animation"> </div>
+</body>
+</html>

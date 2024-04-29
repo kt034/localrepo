@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Table Example</title>
+  <style>
+    h1{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color:rgb(77, 125, 131);
+    }
+    th{
+        padding:50px;
+        background-color: rgb(216, 180, 135);
+    }
+    td{
+        background-color: rgb(148, 122, 91);
+    }
+  </style>
+</head>
+<body>
+<br></br>
+    <h1 align="center"><u>Student Charges</u></h1>
+    <table id="dynamicTable" class="table" align="center">
+        <thead>
+            <tr>
+                <th>S No.</th>
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Month</th>
+                <th>Mess Charges</th>
+                <th>Room Charges</th>
+                <th><button id="addRow" class="btn btn-primary">+</button></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

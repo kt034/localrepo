@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body {
+            font-family: Georgia, Arial, Helvetica, serif;
+            background-color: rgb(4, 124, 128);
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 70px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(114, 236, 8);
+            border-radius: 3px;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(1, 252, 106);
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border: 1px solid rgb(67, 126, 246);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(5, 189, 91);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 200px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="61fae2d395e6ca00047b4f12.png" alt="Meta">
+        </div>
+        <h2>Sign Up Form</h2>
+        <form action="#" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree" align="center">I agree that all details are correct.</label>
+
+            <div class="center-text">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
